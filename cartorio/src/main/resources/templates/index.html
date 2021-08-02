@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Cartórios</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+	integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+	crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="../css/shards.min.css"> -->
+</head>
+
+<body>
+	<div class="container my-2">
+		<div class="card">
+			<div class="card-body">
+
+				<h1>Cartórios</h1>
+				<table class="table table-striped table-responsive-md">
+					<thead>
+						<tr>
+							<th>Posição</th>
+							<th>Nome</th>
+							<th>Endereco</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr th:each="cartorio : ${cartorios}">
+							<td><span th:text="${cartorio.id}"> </span></td>
+							<td><span th:text="${cartorio.nome}"> </span></td>
+							<td><span th:text="${cartorio.endereco}"> </span></td>
+							<td><a th:href="@{/cartorio/edit/{id}(id=${cartorio.id})}"
+								class="btn btn-primary"><i class="fas fa-user-edit ml-2"></i></a></td>
+							<td><a th:href="@{/cartorio/delete/{id}(id=${cartorio.id})}"
+								class="btn btn-danger"><i class="fas fa-trash-alt ml-2"></i></a></td>
+							<td><a th:href="@{/certidao/add/{id}(id=${cartorio.id})}"
+								class="btn">Add certidão<i class="fas fa-plus ml-2"></i></a></td>
+							<td><a th:href="@{/certidao/all/{id}(id=${cartorio.id})}"
+								class="btn">Listar certidões<i class="fas fa-list ml-2"></i></a></td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="my-5">
+					<a class="btn btn-primary" th:href="@{/cartorio/add}"><i
+						class="fas fa-folder-plus mr-2">Adicionar um novo cartório</i></a>
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
