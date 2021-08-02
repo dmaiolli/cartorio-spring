@@ -21,8 +21,15 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Hibernate](https://hibernate.org/)
 
 ## Documentação
-   <img src="./images/azure-boards1.png">
+  <h1>Azure Boards</h1>
+  <p>O azure boards foi utilizado para transformar a história do usuário em épicos/features e backlogs, para uma maior organização e gerenciamento de tarefas na metodologia SCRUM</p>
+  <img src="./images/azure-boards1.png">
+  <img src="./images/azure-boards2.png">
 
+  <h1>MER - Modelo relacional</h1>
+  <p>O MER foi desenvolvido para definir a modelagem de entidade e relacionamento na ferramenta Oracle Datamodeler</p>
+  <img src="./images/mer-docket.pdf">
+  
 <h4 align="center">
     Feito com 💜 by <a href="https://www.linkedin.com/in/dmaiolli/" target="_blank">Denys Maiolli</a>
 </h4>
