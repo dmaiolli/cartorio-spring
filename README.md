@@ -30,7 +30,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
   <h1>MER - Modelo relacional</h1>
   <p>O MER foi desenvolvido para definir a modelagem de entidade e relacionamento na ferramenta Oracle Datamodeler</p>
-  <embed src="./images/mer-docket.pdf" width="800px" height="800px" />
+  <img src="./images/mer-docket.png">
 
 <h4 align="center">
     Feito com 💜 by <a href="https://www.linkedin.com/in/dmaiolli/" target="_blank">Denys Maiolli</a>
